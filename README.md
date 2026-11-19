@@ -38,4 +38,9 @@ O modelo relacional foi projetado para garantir integridade referencial e evitar
 
 ---
 
-## 🔐 Configuração
+## 🔐 Configuração de Ambiente
+
+Para integrar este banco a uma API/back-end, utilize uma variável de ambiente com a string de conexão do PostgreSQL (nunca exponha credenciais reais no código):
+
+```env
+DATABASE_URL="postgresql://usuario:SENHA@host.neon.tech/rolesp?sslmode=require"
